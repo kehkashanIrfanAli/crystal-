@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="card">
+        <img src="" alt="">
+        <div id="title"></div>
+        <div id="price"></div>
+        <button>add to cart </button>
+    </div>
+    <script>
+        function loadata() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200);
+                let product = JSON.parse(this.responseText);
+                let output = "";
+                for (let item of product) {
+                    output = '<div id="card"> <
+                        div > '
+                }
+            }
+            xhttp.open('GET', 'readme.text', true)
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
